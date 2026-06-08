@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário de Campo • Agrotech</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="fundo-animado"></div>
+
+    <header>
+        <span class="badge-topo">TECNOLOGIA NO CAMPO</span>
+        <h1>DIÁRIO DE CAMPO</h1>
+        <p>Gerencie a sua lavoura com inteligência e controle de alto impacto</p>
+    </header>
+
+    <section class="resumo-container">
+        <div class="card-contador">
+            <span class="numero" id="total-pendentes">0</span>
+            <span class="rotulo">TAREFAS PENDENTES</span>
+        </div>
+        <div class="card-contador concluido">
+            <span class="numero" id="total-concluidas">0</span>
+            <span class="rotulo">TAREFAS CONCLUÍDAS</span>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <section class="formulario-secao">
+            <h2>NOVA ATIVIDADE</h2>
+            <form id="form-atividade">
+                
+                <div class="campo">
+                    <label for="data">Data da Atividade</label>
+                    <input type="date" id="data" required>
+                </div>
+
+                <div class="campo">
+                    <label for="lote">Talhão / Lote / Área</label>
+                    <input type="text" id="lote" placeholder="Ex: Lote Norte, Estufa 2" required>
+                </div>
+
+                <div class="campo">
+                    <label for="cultura">Cultura (Plantação)</label>
+                    <input type="text" id="cultura" placeholder="Ex: Milho, Tomate, Café" required>
+                </div>
+
+                <div class="campo">
+                    <label for="atividade">Tipo de Atividade</label>
+                    <select id="atividade" required>
+                        <option value="" disabled selected>Selecione uma opção...</option>
+                        <option value="Preparo do Solo">Preparo do Solo</option>
+                        <option value="Plantio">Plantio</option>
+                        <option value="Irrigação">Irrigação</option>
+                        <option value="Adubação/Fertilização">Adubação / Fertilização</option>
+                        <option value="Manejo de Pragas">Manejo de Pragas (Defensivos)</option>
+                        <option value="Colheita">Colheita</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="prioridade">Prioridade / Urgência</label>
+                    <select id="prioridade" required>
+                        <option value="Baixa">🟢 Baixa (Rotina)</option>
+                        <option value="Média" selected>🟡 Média (Importante)</option>
+                        <option value="Alta">🔴 Alta (Urgente / Crítico)</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="observacoes">Observações (Opcional)</label>
+                    <textarea id="observacoes" rows="3" placeholder="Detalhes técnicos, marcas de insumos..."></textarea>
+                </div>
+
+                <button type="submit" id="btn-salvar">SALVAR REGISTRO</button>
+            </form>
+        </section>
+
+        <section class="lista-secao">
+            <h2>HISTÓRICO DA LAVOURA</h2>
+            
+            <div class="filtros-container">
+                <div class="campo-filtro">
+                    <label for="filtro-lote">Filtrar por Lote</label>
+                    <input type="text" id="filtro-lote" placeholder="Buscar lote...">
+                </div>
+                <div class="campo-filtro">
+                    <label for="filtro-status">Status</label>
+                    <select id="filtro-status">
+                        <option value="todos">Mostrar Todas</option>
+                        <option value="pendente">Apenas Pendentes</option>
+                        <option value="concluida">Apenas Concluídas</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div id="lista-tarefas"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Agrotech Control. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
