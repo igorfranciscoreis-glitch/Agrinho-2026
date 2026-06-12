@@ -1,6 +1,6 @@
 🛠️ Documentação Técnica do Projeto
 1. Nome do Site
-Sugestão: AgroEcoFuturo (ou Plataforma AgroForte)
+Diario de Campo
 
 2. Objetivo
 O objetivo do site é ser um portal de informações simples e prático que mostra como o agronegócio pode produzir bastante alimentos e, ao mesmo tempo, proteger a natureza. Ele serve para ajudar agricultores, estudantes e pesquisadores a encontrarem ideias, tecnologias verdes (como a rotação de culturas) e exemplos reais de que é possível lucrar no campo sem destruir o meio ambiente.
