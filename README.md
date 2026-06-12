@@ -50,12 +50,12 @@ agro-eco-futuro/
 │   │
 │   └── pages/               # Páginas estruturais do site
 │       ├── index.html       # Página inicial (Home)
-
-Trabalho desenvolvido por Igor Francisco Reis
 │       ├── sobre.html       # Quem somos e proposta do projeto
 │       ├── artigos.html     # Espaço para os textos acadêmicos e a redação
 │       └── contato.html     # Formulário de comunicação
 │
 ├── .gitignore               # Arquivos a serem ignorados pelo Git
 ├── README.md                # Explicação geral e instruções do projeto
-└── package.json             # Dependências e scripts do projeto (Node.js)
+└── package.json             # Dependências e scripts do projeto (Node.js
+
+Trabalho desenvolvido por Igor Francisco Reis
